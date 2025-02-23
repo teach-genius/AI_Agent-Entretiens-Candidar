@@ -1,0 +1,230 @@
+{%extends 'base_template.html'%}
+{%block title%}Home{%endblock%}
+{% load static %}
+{%block style%}
+<link rel="stylesheet" href="{%static 'css/styles.css'%}">
+{%endblock%}
+{%block nav%}
+<nav>
+    <div>
+        <a href="{%url 'home'%}"><img src="{%static 'icons/logo.svg'%}" alt="logo" srcset=""></a>
+    </div>
+    <ul>
+        <a href="{%url 'home'%}">
+            <li>
+                <p class="item-nave">Home</p>
+            </li>
+        </a>
+        <a href="#main">
+            <li>
+                <p class="item-nave">About</p>
+            </li>
+        </a>
+        <a href="#how_work">
+            <li>
+                <p class="item-nave">How it Works</p>
+            </li>
+        </a>
+    </ul>
+    <a href="{%url 'testpsychotechnique:formulaire'%}"><button>Get Started</button></a>
+</nav>
+{%endblock%}
+{%block tentent%}
+<div id="section1">
+    <div>
+        <h1>The Home for Ambitious Candidates in Morocco</h1>
+    </div>
+    <div>
+        <p>Whether you’re just starting or looking to level up, CandiDar offers unique tools to practice ,<br> improve,
+            and excel in every interview. Take control of your future today!</p>
+    </div>
+    <a href="{%url 'testpsychotechnique:formulaire'%}"><button>Get Started</button></a>
+    <div id="view">
+        <img src="{% static 'icons/section2.svg' %}" alt="" srcset="">
+    </div>
+</div>
+
+<div style="position: relative;top: 50px;">
+    <h2 style="font-family: 'Inter', sans-serif;text-align: center;">ABOUT</h2>
+</div>
+
+<main id="main">
+    <section id="s1">
+        <div>
+            <h2>
+                About Us - CandiDar
+            </h2>
+            <p>
+                CandiDar is a Moroccan platform offering unlimited interview practice. Inspired by the concept of home,
+                a place of safety and support in Moroccan culture, CandiDar combines Candi (Candidate) and Dar (home in
+                Arabic). We provide a nurturing space where candidates can practice, learn from mistakes, and build
+                confidence at their own pace—anytime, anywhere.
+            </p>
+        </div>
+        <div>
+            <h2>
+                Our vision
+            </h2>
+            <p>
+                To empower Moroccan graduates by offering a platform for mock interviews and constructive feedback,
+                helping them secure their dream job amidst the challenges of the Moroccan job market.
+            </p>
+        </div>
+    </section>
+    <section id="s2">
+        <div id="dvs21">
+            <p><span><b>90k+ Grads/Year</b> </span><br>High talent production </p>
+        </div>
+        <div id="dvs22">
+            <div id="sdv22">
+                <p><b>25.9% Unemployment</b> Graduate integration crisis</p>
+            </div>
+            <div id="dvs23">
+                <p><b>70% Graduates</b><br>Lack Interview Skills</p>
+            </div>
+        </div>
+    </section>
+</main>
+<div>
+    <h2 style="font-family: 'Inter', sans-serif;text-align: center;">HOW IT WORKS</h2>
+</div>
+<div id="how_work">
+    <div id="head">
+        <h1>4 Steps to Secure Your Future</h1>
+    </div>
+
+    <div id="sub-info">
+        <div>
+            <h2>1</h2>
+            <h3>Fill Out Your Job Description</h3>
+            <p>Input your desired job description to <br>match the role you're aiming for.This <br>tailors your mock
+                interview to your role.</p>
+        </div>
+
+        <div>
+            <h2>2</h2>
+            <h3>Psychotechnical Test</h3>
+            <p>Complete a 3-minute psychotechnical <br> test to assess your reasoning and <br> problem-solving under
+                pressure.</p>
+        </div>
+
+        <div>
+            <h2>3</h2>
+            <h3>Choose Your Interviewer</h3>
+            <p>Choose from three experienced <br> Moroccan interviewers who <br> specialize in your target field.</p>
+        </div>
+
+        <div>
+            <h2>4</h2>
+            <h3>Mock Interview & Feedback</h3>
+            <p>Participate in a mock interview and <br> answer real-world questions then <br> receive personalized
+                feedback.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <hr class="footer-line">
+    <div class="footer-content">
+        <img src="{% static 'icons/logo.svg' %}" alt="logo">
+        <div>
+                <p style="font-family: 'Inter', sans-serif;"><i class="fas fa-map-marker-alt" style="color: #07c1a8;margin-right:10px;"></i>Euromed University of FES, Morocco</p>
+                <p style="text-align: start;font-family: 'Inter', sans-serif;"><i style="color: #07c1a8;margin-right: 10px;" class="fas fa-envelope"></i>vreau@gmail.com</p>
+            <div class="social-icons">
+                <p style="font-family: 'Inter', sans-serif;">Social Media:</p>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr class="footer-line" style="opacity: 0.3;">
+    <div class="footer-links">
+        <a href="#">
+            <p class="item-foot">HOME</p>
+        </a>
+        <a href="#">
+            <p class="item-foot">ABOUT</p>
+        </a>
+        <a href="#">
+            <p class="item-foot">HOW IT WORKS</p>
+        </a>
+        <a href="#">
+            <p class="item-foot">CONTACT US</p>
+        </a>
+    </div>
+</footer>
+
+<!-- FontAwesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+    /* Style général du footer */
+    footer {
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    /* Lignes de séparation */
+    .footer-line {
+        width: 800px;
+        height: 2px;
+        background-color: #07c1a8;
+        margin: 20px auto;
+    }
+
+    /* Contenu principal du footer */
+    .footer-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    .footer-content img {
+        margin-right: 100px;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        color: #07c1a8;
+        font-size: 20px;
+        transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #028c7e;
+    }
+
+    /* Liens du footer */
+    .footer-links {
+        width: 900px;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .item-foot {
+        font-family: 'Inter', sans-serif;
+        color: black;
+        font-size: 16px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+    }
+    html {
+  scroll-behavior: smooth;
+}
+
+</style>
+
+{%endblock%}

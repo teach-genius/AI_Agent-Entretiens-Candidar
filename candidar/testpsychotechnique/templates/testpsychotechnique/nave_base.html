@@ -1,0 +1,21 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'testpsychotechnique/style.css'%}">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    {%block style%}{%endblock%}
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="{%url 'home'%}"><img src="{%static 'icons/logo.svg'%}" alt="logo" srcset=""></a>
+        </div>
+    </nav>
+    {%block main%}{%endblock%}
+</body>
+</html>

@@ -1,0 +1,206 @@
+#main-grad- {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    #section-two {
+        background-color: #44B4A00D;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 150vh;
+        padding: 10px;
+        position: relative;
+        top: -140px;
+
+        #btn-go {
+            position: relative;
+            left: 740px;
+            color: white;
+            width: 150px;
+            height: 35px;
+            background-color: #008573;
+            border-radius: 20px;
+            border: 2px #dfe3e8 solid;
+        }
+
+        #lab-score {
+            width: 100%;
+        }
+
+        h3 {
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .view-s-2 {
+            border: 2px #008573 solid;
+            border-radius: 18px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            width: 150vh;
+
+        }
+
+        .view-s2 {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+            gap: 430px;
+
+            p {
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+    }
+
+    #info {
+        color: #008573;
+        width: 150vh;
+        position: relative;
+        top: 130px;
+
+        h2 {
+            font-family: 'Raleway', sans-serif;
+        }
+    }
+
+    #h4-section {
+        position: relative;
+        top: -15px;
+        font: bold;
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    #section-one {
+        display: flex;
+        flex-direction: row;
+        width: 150vh;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        font-family: 'Raleway', sans-serif;
+
+        #div-one {
+            display: flex;
+            flex-direction: row;
+            width: 380px;
+            padding-right: 20px;
+            align-items: center;
+            gap: 5px;
+
+            #d2 {
+                display: flex;
+                flex-direction: column;
+
+                #all-score {
+                    position: relative;
+                    top: 10px;
+                    text-align: center;
+                    font-family: 'Raleway', sans-serif;
+                }
+
+                #d-2 {
+                    position: relative;
+                    top: 45px;
+                    justify-content: center;
+                    justify-items: center;
+                    width: 100px;
+                    height: 100px;
+                    align-items: center;
+                    display: flex;
+
+                    p {
+                        position: absolute;
+                        text-align: center;
+                        top: 0px;
+                    }
+                }
+            }
+
+            #d1 {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 250px;
+
+                .d1 {
+                    color: #008573;
+                    margin-left: 5px;
+                }
+            }
+
+            p {
+                font-family: 'Raleway', sans-serif;
+            }
+
+            circle {
+                fill: none;
+                stroke-width: 10;
+            }
+
+            circle:first-of-type {
+                stroke: rgb(0, 133, 115, 0.5);
+                /* Couleur du fond */
+            }
+
+            #progress {
+                stroke: #226D68;
+                /* Couleur de progression */
+                stroke-dasharray: 283;
+                /* Circumference du cercle (2 * Math.PI * 45) */
+                stroke-dashoffset: 283;
+                /* Par défaut, tout est masqué */
+                transition: stroke-dashoffset 0.1s linear;
+            }
+        }
+
+        #div-two {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 230px;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            padding-left: 20px;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                gap: 100px;
+                align-items: center;
+            }
+
+        }
+
+        #div-three {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 200px;
+            padding-right: 20px;
+            padding-left: 20px;
+
+            .three-p {
+                margin-left: 50px;
+            }
+        }
+    }
+}
+
+.three-p:nth-child(1) {
+    color: #54c45e;
+}
+
+#label {
+    width: 150vh;
+    position: relative;
+    top: -60px;
+
+    p {
+        font-family: 'Raleway', sans-serif;
+    }
+}

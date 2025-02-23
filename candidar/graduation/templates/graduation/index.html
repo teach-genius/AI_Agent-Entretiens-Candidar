@@ -1,0 +1,97 @@
+{%extends 'testpsychotechnique/nave_base.html'%}
+{%load static%}
+{%block title%}graduation{%endblock%}
+{%block style%}
+<link rel="stylesheet" href="{%static 'graduation/css/style.css'%}">{%endblock%}
+{%block main%}
+<main id="main-grad-">
+    <div id="info">
+        <h2>Congratulation!</h2>
+        <h3 id="h4-section">Here is your interview feedback</h3>
+    </div>
+    <section id="section-one">
+        <div id="div-one">
+            <div id="d1">
+                <p>job role<span class="d1">develloper IA</span></p>
+                <p>interviewer<span class="d1">manager RH</span></p>
+            </div>
+            <div id="d2">
+                <div id="d-2">
+                    <p>100%</p>
+                    <svg>
+                        <circle cx="50" cy="50" r="45"></circle>
+                        <circle cx="50" cy="50" r="45" id="progress"></circle>
+                    </svg>
+                </div>
+                <p id="all-score">Over all score</p>
+            </div>
+        </div>
+        <div id="div-two">
+            <div>
+                <p>MCQ test</p>
+                <img src="{% static 'icons/rb_1749.png'%}" alt="" width="25px" height="24px">
+            </div>
+            <div>
+                <p>interview</p>
+                <img src="{% static 'icons/rb_1749.png'%}" alt="" width="25px" height="24px">
+            </div>
+        </div>
+        <div id="div-three">
+            <p>MCQ test - <span class="three-p">100%</span></p>
+            <p>interview - <span class="three-p" style="color: #e81313;">100%</span></p>
+        </div>
+    </section>
+
+    <div id="label">
+        <p>Find bellow interview question with correct answer, your answer and feedback for improvement</p>
+    </div>
+
+    <section id="section-two">
+        <div id="lab-score">
+            <h3>Scores</h3>
+        </div>
+        <div class="view-s-2">
+            <details id="detailsElement">
+                <summary style="list-style: none;"><div class="view-s2">
+                    <p>MCQ test report <span style="margin-left: 50px;">100%</span></p>
+                    <p>view details <span><button id="toggleButton" style="width: 50px;height: 25px;border-radius: 20px;border: 1px solid #008573;margin-left: 5px;">View</button></span></p>
+                </div>
+                </summary>
+                <p>bonjour</p>
+            </details>
+        </div>
+        <div class="view-s-2">  
+            <details id="detailsElement2">
+                <summary style="list-style: none;"><div class="view-s2">
+                    <p>Interview report <span style="margin-left: 50px;">100%</span></p>
+                    <p>view details <span><button id="toggleButton2" style="width: 50px;height: 25px;border-radius: 20px;border: 1px solid #008573;margin-left: 5px;">View</button></span></p>
+                </div>
+                </summary>
+                <p>bonjour</p>
+            </details>
+        </div>
+        <div style="width: 100%;">
+            <button id="btn-go">GoHome</button>
+        </div>
+    </section>
+
+    
+    <script>
+        const details = document.getElementById("detailsElement");
+        const button = document.getElementById("toggleButton");
+      
+        button.addEventListener("click", () => {
+          details.open = !details.open; // Bascule l'état (ouvert/fermé)
+          button.textContent = details.open ? "Hiden" : "View";
+        });
+
+        const details2 = document.getElementById("detailsElement2");
+        const button2 = document.getElementById("toggleButton2");
+      
+        button2.addEventListener("click", () => {
+          details2.open = !details2.open; // Bascule l'état (ouvert/fermé)
+          button2.textContent = details2.open ? "Hiden" : "View";
+        });
+      </script>
+</main>
+{%endblock%}

@@ -1,0 +1,46 @@
+{%extends 'testpsychotechnique/nave_base.html'%}
+{%load static%}
+{%block style%}
+<link rel="stylesheet" href="{% static 'interviewsession/css/style.css'%}">
+{%endblock%}
+{%block main%}
+<main id="view-interview">
+    <section id="section-1">
+        <div>
+            <video id="camera" autoplay></video>
+        </div>
+    </section>
+
+    <section onclick="start_inter()" id="record_interview">
+        <div id="rec-view">
+            <img src="{%static 'icons/logo.svg'%}" alt="" srcset="" height="100%" width="100%">
+        </div>
+        <div id="wave-container" class="hidden">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+    </section>
+
+    <section id="section-2">
+        <div id="discussions" class="texts">
+        </div>
+
+        <div id="start-inter">
+            <button id="start-camera" type="button">
+                <span id="ondevoice">
+                    <div id="voice-animation">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </span>
+                <span id="pressmidlle">
+                    <p>Press the middle button</p>
+                </span>
+            </button>
+            <button id="end-interview" type="button" onclick="end_interview()">End interview</button>
+        </div>
+    </section>
+</main>
+{%endblock%}

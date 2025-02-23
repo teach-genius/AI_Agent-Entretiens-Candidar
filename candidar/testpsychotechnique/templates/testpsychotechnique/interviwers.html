@@ -1,0 +1,29 @@
+{%extends 'testpsychotechnique/index.html'%}
+{%load static%}
+{%block content%}
+<section>
+    <div id="head-text">
+        <h1>Choose your Interviewer</h1>
+    </div>
+    <div id="profiles">
+        <div>
+            <div class="boite">
+                <img src="{%static 'icons/interviewer1.svg'%}" alt="" height="250px" width="200px">
+            </div>
+            <p><b>Atik Bakkali</b><br> Hiring Manager</p>
+        </div>
+        <div>
+            <div class="boite">  
+                <img src="{%static 'icons/interviwer2.svg'%}" alt="" height="250px" width="200px">
+            </div>
+            <p ><b>Amina Ouazzani</b><br> HR Manager</p>
+        </div>
+        <div>
+            <div class="boite">   
+                <img src="{%static 'icons/interviewer3.svg'%}" alt="" height="250px" width="200px">
+            </div>
+            <p ><b>Youssef Laarabi</b><br> Technical Expert</p>
+        </div>
+    </div>
+</section>
+{%endblock%}

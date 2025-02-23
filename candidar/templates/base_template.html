@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="{%static 'js/scripts.js'%}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    {%block style%}{%endblock%}
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+    {%block nav%}{%endblock%}
+    {%block tentent%}{%endblock%}
+    <div id="back">
+        <img src="{%static 'icons/back_background.svg'%}" alt="" srcset="" height="100%" width="100%">
+    </div>
+</body>
+
+</html>
